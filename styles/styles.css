@@ -1,0 +1,166 @@
+/* fonts */
+
+.poppins-main {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+/* text colors */
+
+.clr-primary {
+  color: #3a3a3a;
+}
+
+.clr-secondary {
+  color: #787885;
+}
+
+/* shared css */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* navigation bar css */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 87px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.nav-three-bar {
+  display: none;
+}
+
+#shopping-cart {
+  display: none;
+}
+
+.navbar-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-link-container {
+  display: flex;
+  gap: 34px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* header banner */
+.header-banner {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  height: 414px;
+  padding-top: 87px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.banner-text-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 582px;
+  gap: 20px;
+}
+
+.banner-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+}
+
+.banner-text {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.banner-button {
+  width: 196px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 41px;
+  background-color: #e02c6d;
+  color: white;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.banner-image-container {
+  background-image: url("../images/Circle\ design.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 440px;
+}
+.banner-image {
+  width: 100%;
+}
+
+/* resposive css */
+
+@media screen and (max-width: 576px) {
+  /* navbar */
+  nav {
+    padding-top: 35px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .nav-three-bar {
+    display: block;
+  }
+
+  .nav-link-container {
+    display: none;
+  }
+  #shopping-cart {
+    display: block;
+  }
+  .navbar-header {
+    font-size: 1.125rem;
+  }
+
+  /* banner section */
+  .header-banner {
+    padding-top: 35px;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-direction: column;
+    height: auto;
+    grid-gap: 50px;
+  }
+  .banner-text-section{
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .banner-heading{
+    font-size: 1.75rem;
+  }
+  .button-container{
+    display: flex;
+    justify-content: center;
+  }
+
+}
